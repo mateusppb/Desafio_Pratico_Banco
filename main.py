@@ -4,12 +4,6 @@ from Cliente import Cliente
 cliente1 = Cliente("Mateus", "12345678900")
 cliente2 = Cliente("Fulano", "00011122233")
 print(cliente1)
-#teste de duplicação de cpf
-cliente3 = Cliente("Ciclano", "12345678900")
-
-
-banco = [cliente1, cliente2]
-
 
 #criação de contas
 c1 = ContaCorrente("000",cliente1)
@@ -57,6 +51,10 @@ print(f"pós rendimento de {rendimento}:\n{c3}")
 
 #lisatr as contas de um cliente
 cliente1.get_contas()
+
+#teste de duplicação de cpf
+#lançamento de erro
+cliente3 = Cliente("Ciclano", "12345678900")
 
 
 
