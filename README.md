@@ -7,7 +7,7 @@ O sistema simula operações básicas de um banco, com clientes e diferentes tip
 
 ## Descrição do Projeto
 
-Este projeto implementa um sistema bancário simples que utiliza conceitos de POO para modelar:
+Este projeto implementa um sistema bancário simples que utiliza conceitos de POO:
 
 - Contas Bancárias (conta corrente e poupança)
 - Clientes vinculados a suas contas
@@ -65,7 +65,7 @@ Uso de herança, polimorfismo, encapsulamento e lógica de negócio.
 
 ## Cenário de Teste (Exemplo de Uso)
 
-No script principal (`main.py`):
+No `main.py`:
 
 1. Criação de clientes
 2. Criação e associação de contas correntes e poupança
@@ -73,6 +73,7 @@ No script principal (`main.py`):
 4. Testes para saque indevido
 5. Aplicação de rendimento na poupança
 6. Impressão de informações para verificação
+7. teste de cpf e número de conta únicos
 
 ---
 
