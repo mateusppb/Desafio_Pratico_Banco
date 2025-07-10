@@ -79,10 +79,10 @@ No script principal (`main.py`):
 ## Como Rodar
 
 1. Clone o repositório  
-   `git clone <url-do-repositorio>`
+   `git clone https://github.com/mateusppb/Desafio_Pratico_Banco.git`
 
 2. Navegue até a pasta do projeto  
-   `cd nome-do-projeto`
+   `cd Desafio_Pratico_Banco`
 
 3. Execute o script principal  
    `python main.py`
