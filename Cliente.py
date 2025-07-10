@@ -4,6 +4,7 @@ class Cliente:
         self.__cpf = cpf
         self.__contas = []
     
+    #adicionar uma conta ao cliente(titular)
     def adicionar_conta(self, conta):
         from Conta import ContaBancaria
         if isinstance(conta, ContaBancaria):
@@ -18,7 +19,11 @@ class Cliente:
             print("O objeto não é ContaBancaria.")
             return False
 
+    #remover conta do cliente
     def remover_conta(self, numero_conta):
+        if not self.__contas:
+            print("Nenhuma conta vinculada ao cliente")
+            return False
         for conta in self.__contas:
             if conta.numero_conta == numero_conta:
                 self.__contas.remove(conta)
@@ -35,5 +40,8 @@ class Cliente:
 
     def __str__(self):
         return f'Cliente: [{self.__nome}] (CPF: [{self.__cpf}])'
+
+
+
 
 
