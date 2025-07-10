@@ -1,8 +1,13 @@
 class Cliente:
+    __cpfs_registrados = set()
+
     def __init__(self,nome: str, cpf: str):
+        if cpf in Cliente.__cpfs_registrados:
+            raise ValueError("este cpf já está em uso")
         self.__nome = nome
         self.__cpf = cpf
         self.__contas = []
+        Cliente.__cpfs_registrados.add(cpf)
     
     #adicionar uma conta ao cliente(titular)
     def adicionar_conta(self, conta):
@@ -40,6 +45,8 @@ class Cliente:
 
     def __str__(self):
         return f'Cliente: [{self.__nome}] (CPF: [{self.__cpf}])'
+
+
 
 
 
